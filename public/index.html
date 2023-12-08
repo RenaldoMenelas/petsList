@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Pets</h1>
+    <form  id="form" action="http://localhost:3000/submit-form" method="POST" enctype="application/x-www-form-urlencoded">
+        <label >Pet Name
+        <input type="text" id="pet-name" required>
+        </label>
+        <label>Profile Picture
+            <input id="Profile-pic" type="text" placeholder="Picture URL" required>
+         </label>
+
+    <fieldset>
+      <legend>Species</legend>
+      <p>
+        <input type="radio" name="animal" id="Cat" value='Cat' />
+        <label for='Cat'>Cat</label>
+      </p>
+      <p>
+        <input type="radio" name="animal" id="Dog" value='Dog' />
+        <label for='Dog' >Dog</label>
+      </p>
+      <p>
+        <input type="radio" name="animal" id="Bird" value='Bird'  />
+        <label for='Bird' >Bird</label>
+      </p>
+    </fieldset>
+    <p>
+ <label>
+  <input id="checkbox" type="checkbox"/>
+  Are they friendly</label>
+</p>
+<input type="submit" value='add pet' id="button" ></input>
+    </form>
+    <main>
+        <div id="pets-container"></div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

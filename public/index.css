@@ -1,0 +1,26 @@
+
+img { 
+    height: 15rem; 
+}
+sup { 
+    color: red;
+ }
+form, #pets-container { 
+    display: flex; gap: 1rem; padding: 1rem; border: 0.1rem solid #000;
+ }
+form { 
+    flex-direction: column; width: fit-content; 
+}
+#pets-container {
+     display: flex;
+    flex-wrap: wrap;
+     list-style: none; 
+}
+
+.pet{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 62px;
+}
